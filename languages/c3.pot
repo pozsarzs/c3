@@ -1,0 +1,135 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: frmmain.about
+msgid "About"
+msgstr ""
+
+#: frmmain.bands
+msgid "Bands"
+msgstr ""
+
+#: frmmain.black
+msgid "black"
+msgstr ""
+
+#: frmmain.blue
+msgid "blue"
+msgstr ""
+
+#: frmmain.brown
+msgid "brown"
+msgstr ""
+
+#: frmmain.browsererror
+msgid "Cannot run default browser."
+msgstr ""
+
+#: frmmain.capacitor
+msgid "Capacitor"
+msgstr ""
+
+#: frmmain.closew
+msgid "Close"
+msgstr ""
+
+#: frmmain.decode
+msgid "Decode!"
+msgstr ""
+
+#: frmmain.diode
+msgid "Diode"
+msgstr ""
+
+#: frmmain.gold
+msgid "gold"
+msgstr ""
+
+#: frmmain.gray
+msgid "gray"
+msgstr ""
+
+#: frmmain.green
+msgid "green"
+msgstr ""
+
+#: frmmain.inductor
+msgid "Inductor"
+msgstr ""
+
+#: frmmain.licence
+msgid "Licence: GNU GPL 3.0 or later"
+msgstr ""
+
+#: frmmain.mailererror
+msgid "Cannot run default mailer."
+msgstr ""
+
+#: frmmain.no_band
+msgid "no band"
+msgstr ""
+
+#: frmmain.no_colour
+msgid "no colour"
+msgstr ""
+
+#: frmmain.orange
+msgid "orange"
+msgstr ""
+
+#: frmmain.pink
+msgid "pink"
+msgstr ""
+
+#: frmmain.red
+msgid "red"
+msgstr ""
+
+#: frmmain.resistor
+msgid "Resistor"
+msgstr ""
+
+#: frmmain.silver
+msgid "silver"
+msgstr ""
+
+#: frmmain.tol
+msgid "tolerance"
+msgstr ""
+
+#: frmmain.ttol
+msgid "Tolerance: "
+msgstr ""
+
+#: frmmain.ttype
+msgid "Type: "
+msgstr ""
+
+#: frmmain.value
+msgid "number code"
+msgstr ""
+
+#: frmmain.viola
+msgid "viola"
+msgstr ""
+
+#: frmmain.vval
+msgid "Value:"
+msgstr ""
+
+#: frmmain.vvol
+msgid "Voltage: "
+msgstr ""
+
+#: frmmain.whatis
+msgid "Colour code decoder"
+msgstr ""
+
+#: frmmain.white
+msgid "white"
+msgstr ""
+
+#: frmmain.yellow
+msgid "yellow"
+msgstr ""
+

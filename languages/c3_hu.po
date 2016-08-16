@@ -1,0 +1,131 @@
+#: frmmain:bands
+msgid "Bands"
+msgstr "Sávok"
+
+#: frmmain:black
+msgid "black"
+msgstr "fekete"
+
+#: frmmain:blue
+msgid "blue"
+msgstr "kék"
+
+#: frmmain:brown
+msgid "brown"
+msgstr "barna"
+
+#: frmmain:capacitors
+msgid "Capacitor"
+msgstr "Kondenzátor"
+
+#: frmmain:closew
+msgid "Close"
+msgstr "Kilépés"
+
+#: frmmain:diodes
+msgid "Diode"
+msgstr "Dióda"
+
+#: frmmain:gold
+msgid "gold"
+msgstr "arany"
+
+#: frmmain:gray
+msgid "gray"
+msgstr "szürke"
+
+#: frmmain:green
+msgid "green"
+msgstr "zöld"
+
+#: frmmain:inductors
+msgid "Inductor"
+msgstr "Tekercs"
+
+#: frmmain:no_band
+msgid "no band"
+msgstr "nincs sáv"
+
+#: frmmain:no_colour
+msgid "no colour"
+msgstr "nincs szín"
+
+#: frmmain:orange
+msgid "orange"
+msgstr "narancs"
+
+#: frmmain:red
+msgid "red"
+msgstr "vörös"
+
+#: frmmain:resistors
+msgid "Resistor"
+msgstr "Ellenállás"
+
+#: frmmain:silver
+msgid "silver"
+msgstr "ezüst"
+
+#: frmmain:viola
+msgid "viola"
+msgstr "lila"
+
+#: frmmain:pink
+msgid "pink"
+msgstr "rózsaszín"
+
+#: frmmain:white
+msgid "white"
+msgstr "fehér"
+
+#: frmmain:yellow
+msgid "yellow"
+msgstr "sárga"
+
+#: frmmain:about
+msgid "About"
+msgstr "Névjegy"
+
+#: frmmain:licence
+msgid "Licence: GNU GPL 3.0 or later"
+msgstr "Licenc: GNU GPL 3.0 vagy későbbi"
+
+#: frmmain:whatis
+msgid "Colour code decoder"
+msgstr "Színjelzés dekóder"
+
+#: frmmain:tol
+msgid "tolerance"
+msgstr "tűrés"
+
+#: frmmain:value
+msgid "number code"
+msgstr "számjelölés"
+
+#: frmmain:browsererror
+msgid "Cannot run default browser."
+msgstr "Nem tudom futtatni az alapértelmezett böngészőt!"
+
+#: frmmain:mailererror
+msgid "Cannot run default mailer."
+msgstr "Nem tudom futtatni az alapértelmezett levelezőt!"
+
+#: frmmain:decode
+msgid "Decode!"
+msgstr "Dekódold!"
+
+#: frmmain:vval
+msgid "Value:"
+msgstr "Érték:"
+
+#: frmmain:ttol
+msgid "Tolerance: "
+msgstr "Tűrés: "
+
+#: frmmain:vvol
+msgid "Voltage: "
+msgstr "Feszültség: "
+
+#: frmmain:ttype
+msgid "Type: "
+msgstr "Típus: "

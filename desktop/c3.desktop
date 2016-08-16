@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=C3
+Comment=Colour code of components
+Comment[hu]=Alkatrészek színjelölése
+Exec=c3
+Icon=c3.xpm
+Type=Application
+Categories=Application;Electronics;
+Terminal=false
+StartupNotify=true
+
