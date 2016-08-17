@@ -3,7 +3,7 @@ Version: 0.6
 Section: electronics
 Priority: extra
 Architecture: i386
-Installed-Size: 4.8 MB
+Installed-Size: 4.4 MB
 Maintainer: Pozsar Zsolt <pozsarzs@gmail.com>
 Depends: libc6, libglib2.0-0, libgtk2.0-0
 Description: This is an decoder for colour code
