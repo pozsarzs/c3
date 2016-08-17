@@ -20,7 +20,7 @@ General Public License for more details.
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 }
 
-program chc;
+program c3;
 {$MODE OBJFPC}{$H+}
 uses
   Dialogs, Interfaces, Forms, SysUtils,

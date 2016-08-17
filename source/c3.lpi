@@ -53,7 +53,7 @@
         <EditorIndex Value="0"/>
         <WindowIndex Value="1"/>
         <TopLine Value="1"/>
-        <CursorPos X="1" Y="7"/>
+        <CursorPos X="11" Y="23"/>
         <UsageCount Value="90"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -68,14 +68,14 @@
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <WindowIndex Value="1"/>
-        <TopLine Value="1"/>
-        <CursorPos X="1" Y="7"/>
+        <TopLine Value="873"/>
+        <CursorPos X="21" Y="887"/>
         <UsageCount Value="90"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
     </Units>
-    <JumpHistory Count="3" HistoryIndex="2">
+    <JumpHistory Count="7" HistoryIndex="6">
       <Position1>
         <Filename Value="frmmain.pp"/>
         <Caret Line="843" Column="13" TopLine="821"/>
@@ -88,6 +88,22 @@
         <Filename Value="frmmain.pp"/>
         <Caret Line="7" Column="1" TopLine="1"/>
       </Position3>
+      <Position4>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="330" Column="13" TopLine="311"/>
+      </Position4>
+      <Position5>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="329" Column="13" TopLine="310"/>
+      </Position5>
+      <Position6>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="326" Column="11" TopLine="310"/>
+      </Position6>
+      <Position7>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="329" Column="11" TopLine="311"/>
+      </Position7>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>

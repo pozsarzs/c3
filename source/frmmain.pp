@@ -254,6 +254,16 @@ var
 const
   APPNAME='C3';
   VERSION='0.6';
+  {$IFDEF UNIX}
+    BROWSER='xdg-open';
+    MAILER='xdg-email';
+  {$ENDIF}
+  {$IFDEF WINDOWS}
+    BROWSER='rundll32.exe url.dll,FileProtocolHandler';
+    MAILER='rundll32.exe url.dll,FileProtocolHandler mailto:';
+  {$ENDIF}
+  EMAIL='pozsarzs@gmail.com';
+  WEB='http://www.pozsarzs.hu';
 
  {$IFDEF UNIX}
   {$I config.inc}
@@ -300,15 +310,9 @@ implementation
 
 //-- run browser ---------------------------------------------------------------
 procedure runbrowser(url: string);
-const
-  {$IFDEF UNIX}
-    defbrowser='xdg-open';
-  {$ENDIF}
-  {$IFDEF WINDOWS}
-    defbrowser='rundll32.exe url.dll,FileProtocolHandler';
-  {$ENDIF}
 begin
-  Form1.Process1.CommandLine:=defbrowser+' '+url;
+  Form1.Process1.Executable:=BROWSER;
+  Form1.Process1.Parameters.Add(url);
   try
     Form1.Process1.Execute;
   except
@@ -318,15 +322,9 @@ end;
 
 //-- run mailer ----------------------------------------------------------------
 procedure runmailer(url: string);
-const
-  {$IFDEF UNIX}
-    defmailer='xdg-email';
-  {$ENDIF}
-  {$IFDEF WINDOWS}
-    defmailer='rundll32.exe url.dll,FileProtocolHandler mailto:';
-  {$ENDIF}
 begin
-  Form1.Process2.CommandLine:=defmailer+' '+url;
+  Form1.Process2.Executable:=MAILER;
+  Form1.Process2.Parameters.Add(url);
   try
     Form1.Process2.Execute;
   except
@@ -864,8 +862,16 @@ procedure TForm1.Form1Create;
 var
   b: byte;
   colours: array[0..14] of string;
+  {$IFDEF WIN32}
+   buffer: pchar;
+   size: integer;
+  {$ENDIF}
 begin
   Form1.Caption:=APPNAME+' v'+VERSION;
+
+ {$IFDEF WIN32}
+  fsplit(paramstr(0),exepath,p,p);
+ {$ENDIF}
 
  {$IFDEF UNIX}
   s:=getenv('LANG');
