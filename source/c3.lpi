@@ -50,10 +50,11 @@
         <Filename Value="c3.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="c3"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="0"/>
         <WindowIndex Value="1"/>
         <TopLine Value="1"/>
-        <CursorPos X="11" Y="23"/>
+        <CursorPos X="1" Y="7"/>
         <UsageCount Value="90"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -65,11 +66,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="frmmain"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <WindowIndex Value="1"/>
-        <TopLine Value="873"/>
-        <CursorPos X="21" Y="887"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="7"/>
         <UsageCount Value="90"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
