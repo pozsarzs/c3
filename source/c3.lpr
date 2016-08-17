@@ -51,7 +51,7 @@ begin
       writeln(' ',fn,{$IFDEF WIN32}'.',fe,{$ENDIF}' [parameter]');
       writeln;
       writeln('parameters:');
-      for b:=1 to 4 do
+      for b:=1 to 2 do
       begin
         write('  ',params[b,1]);
         gotoxy(8,wherey); write(params[b,2]);

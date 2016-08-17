@@ -252,7 +252,7 @@ var
   lang: string;
   s: string;
 const
-  APPNAME='C3C';
+  APPNAME='C3';
   VERSION='0.6';
 
  {$IFDEF UNIX}
@@ -1124,6 +1124,7 @@ begin
   decoder;
   // about
   TabSheet5.Caption:=ABOUT;
+  Label16.Caption:=APPNAME+' v'+VERSION;
   Label17.Caption:=WHATIS;
   Label31.Caption:=LICENCE;
 end;

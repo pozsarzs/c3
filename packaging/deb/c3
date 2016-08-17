@@ -1,2 +1,2 @@
-?package(chc):needs="X11" section="Applications/Science/Electronics"\
-        title="CHC" icon="/usr/share/pixmaps/chc.xpm" command="/usr/bin/chc"
+?package(c3):needs="X11" section="Applications/Science/Electronics"\
+        title="C3" icon="/usr/share/pixmaps/c3.xpm" command="/usr/bin/c3"

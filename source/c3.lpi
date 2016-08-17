@@ -6,6 +6,7 @@
     <General>
       <MainUnit Value="0"/>
       <Title Value="C3"/>
+      <UseAppBundle Value="False"/>
       <UseXPManifest Value="True"/>
       <Icon Value="0"/>
       <ActiveWindowIndexAtStart Value="0"/>
@@ -16,9 +17,8 @@
     </i18n>
     <VersionInfo>
       <UseVersionInfo Value="True"/>
-      <MinorVersionNr Value="5"/>
-      <RevisionNr Value="1"/>
-      <StringTable FileDescription="Colour code decoder" LegalCopyright="(C)2004-2016 Pozsar Zsolt"/>
+      <MinorVersionNr Value="6"/>
+      <StringTable FileDescription="Colour code decoder" LegalCopyright="(C)2004-2016 Pozsar Zsolt" OriginalFilename="c3.exe" ProductName="C3" ProductVersion="0.6"/>
     </VersionInfo>
     <BuildModes Count="1">
       <Item1 Name="default" Default="True"/>
@@ -50,12 +50,11 @@
         <Filename Value="c3.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="c3"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="0"/>
         <WindowIndex Value="1"/>
-        <TopLine Value="16"/>
-        <CursorPos X="16" Y="28"/>
-        <UsageCount Value="89"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="7"/>
+        <UsageCount Value="90"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit0>
@@ -66,16 +65,17 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="frmmain"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <WindowIndex Value="1"/>
-        <TopLine Value="855"/>
-        <CursorPos X="38" Y="867"/>
-        <UsageCount Value="89"/>
+        <TopLine Value="1106"/>
+        <CursorPos X="1" Y="1127"/>
+        <UsageCount Value="90"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
     </Units>
-    <JumpHistory Count="2" HistoryIndex="1">
+    <JumpHistory Count="3" HistoryIndex="2">
       <Position1>
         <Filename Value="frmmain.pp"/>
         <Caret Line="843" Column="13" TopLine="821"/>
@@ -84,6 +84,10 @@
         <Filename Value="c3.lpr"/>
         <Caret Line="1" Column="1" TopLine="1"/>
       </Position2>
+      <Position3>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="7" Column="1" TopLine="1"/>
+      </Position3>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
