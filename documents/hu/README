@@ -4,7 +4,28 @@
 
 1. Általános információk
 ~~~~~~~~~~~~~~~~~~~~~~~~
-   Ez egy fojtótekercs méretező alkalmazás EI vasmagos tekercsek számításához.
+   Ez a program szín- és számjelölésű elektronikai alkatrészek azonosításához
+nyújt segítséget.
+
+Kategóriák:
+    1. ellenállások
+     - 3 sávos színkód
+     - 4 sávos színkód
+     - 5 sávos színkód
+     - 6 sávos színkód
+    2. kondenzátorok
+     - 3 sávos színkód (kerámia)
+     - 5 sávos színkód (kerámia)
+     - 5 pontos színkód
+     - 4 sávos színkód (tantál kondenzátorok)
+     - számkód
+    3. 1Nxxxx diódák
+     - 3 sávos színkód
+     - 4 sávos színkód
+     - 5 sávos színkód
+    4. tekercsek
+     - 4 sávos színkód
+
    Ez egy olyan szoftver, amely önnek nem kerül pénzbe (esetleg az internet
 használatáért kell fizetnie). Ennek egyedüli feltétele a General Public Licence
 (Általános Közreadási Feltételek) elfogadása és betartása.
@@ -15,23 +36,24 @@ használatáért kell fizetnie). Ennek egyedüli feltétele a General Public Lic
 2. Telepítő csomagok
 ~~~~~~~~~~~~~~~~~~~~
 a. FreeBSD
-   chc-0.2.tbz                 bináris csomag
+   c3-0.6-FreeBSD-Port.shar   port csomag
+   c3-0.6.txz                 bináris csomag
 
 b. Linux
-   chc-0.2-1.i586.rpm          bináris csomag
-   chc-0.2-i586-1.txz          bináris csomag
-   chc-0.2-i586.bin            telepítő program
-   chc-0.2-i586.tar.gz         bináris csomag
-   chc-0.2.x86.package         bináris csomag
-   chc_0.2-1_i386.deb          bináris csomag
+   c3-0.6-1.i586.rpm          bináris csomag
+   c3-0.6-i586-1.txz          bináris csomag
+   c3-0.6-i586.bin            telepítő program
+   c3-0.6-i586.tar.gz         bináris csomag
+   c3-0.6.x86.package         bináris csomag
+   c3_0.6-1_i386.deb          bináris csomag
 
 c. Windows
-   chc-0.2-win32.exe           telepítő alkalmazás
-   chc-0.2-win32.msi           bináris csomag
-   chc-0.2-win32.zip           bináris csomag
+   c3-0.6-win32.exe           telepítő alkalmazás
+   c3-0.6-win32.msi           bináris csomag
+   c3-0.6-win32.zip           bináris csomag
 
 d. forrűskód
-   chc-0.2.tar.gz              forrásnyelvű csomag
+   c3-0.6.tar.gz              forrásnyelvű csomag
 
 3. Beállítások
 ~~~~~~~~~~~~~~
@@ -40,7 +62,7 @@ használatával állíthatja be az alkalmazás nyelvét. (angol: en_US, magyar h
 
 4. Fontos információk
 ~~~~~~~~~~~~~~~~~~~~~
-   Copyright (C) 2012-2016 Pozsár Zsolt
+   Copyright (C) 2004-2016 Pozsár Zsolt
 
    Ez a program szabad szoftver; terjeszthetõ és/vagy módosítható a Free
 Software Foundation által publikált GNU General Public License 3. vagy annál

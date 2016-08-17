@@ -1,6 +1,6 @@
 { +--------------------------------------------------------------------------+ }
-{ | CCC v0.5.1 * Colour code of components                                   | }
-{ | Copyright (C) 2004-2012 Pozsar Zsolt <pozsarzs@gmail.com>                | }
+{ | C3 v0.6 * Colour code of components                                      | }
+{ | Copyright (C) 2004-2016 Pozsar Zsolt <pozsarzs@gmail.com>                | }
 { | frmmain.pp                                                               | }
 { | Main form.                                                               | }
 { +--------------------------------------------------------------------------+ }
@@ -24,8 +24,9 @@ unit frmmain;
 {$MODE OBJFPC}{$H+}
 interface
 uses
-  Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, ComCtrls,
-  StdCtrls, Buttons, ExtCtrls, Process, Math;
+  {$IFDEF WIN32} Windows, {$ENDIF} Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, ComCtrls,
+  StdCtrls, Buttons, ExtCtrls, Process, Math, dos, gettext;
+
 type
   { TForm1 }
   TForm1  =  class(TForm)
@@ -251,9 +252,14 @@ var
   lang: string;
   s: string;
 const
-  VERSION='0.5.1';
+  APPNAME='C3C';
+  VERSION='0.6';
 
-Resourcestring
+ {$IFDEF UNIX}
+  {$I config.inc}
+ {$ENDIF}
+
+resourcestring
   BANDS = 'Bands';
   BLACK = 'black';
   BLUE = 'blue';
@@ -295,7 +301,7 @@ implementation
 //-- run browser ---------------------------------------------------------------
 procedure runbrowser(url: string);
 const
-  {$IFDEF LINUX}
+  {$IFDEF UNIX}
     defbrowser='xdg-open';
   {$ENDIF}
   {$IFDEF WINDOWS}
@@ -313,7 +319,7 @@ end;
 //-- run mailer ----------------------------------------------------------------
 procedure runmailer(url: string);
 const
-  {$IFDEF LINUX}
+  {$IFDEF UNIX}
     defmailer='xdg-email';
   {$ENDIF}
   {$IFDEF WINDOWS}
@@ -857,17 +863,34 @@ end;
 procedure TForm1.Form1Create;
 var
   b: byte;
-var
   colours: array[0..14] of string;
 begin
-{$IFDEF LINUX}
-  Form1.Caption:='CCC v'+VERSION;
-  Label16.Caption:='CCC v'+VERSION;
-{$ENDIF}
-{$IFDEF WIN32}
-  Form1.Caption:='WinCCC v'+VERSION;
-  Label16.Caption:='WinCCC v'+VERSION;
-{$ENDIF}
+  Form1.Caption:=APPNAME+' v'+VERSION;
+
+ {$IFDEF UNIX}
+  s:=getenv('LANG');
+ {$ENDIF}
+ {$IFDEF WIN32}
+  size:=getLocaleinfo (LOCALE_USER_DEFAULT, LOCALE_SABBREVLANGNAME, nil, 0);
+  getmem(buffer, size);
+  try
+    getlocaleinfo (LOCALE_USER_DEFAULT, LOCALE_SABBREVLANGNAME, Buffer, Size);
+    s:=string(buffer);
+  finally
+    freemem(buffer);
+  end;
+ {$ENDIF}
+  if length(s)=0 then s:='en';
+  lang:=lowercase(s[1..2]);
+ {$IFDEF UNIX}{$IFDEF UseFHS}
+  translateresourcestrings(MYI18PATH+LANG+'/LC_MESSAGES/c3.mo');
+ {$ELSE}
+  translateresourcestrings(EXEPATH+'languages/'+LANG+'/c3_'+LANG+'.mo');
+ {$ENDIF}{$ENDIF}
+ {$IFDEF WIN32}
+  translateresourcestrings(EXEPATH+'languages\'+LANG+'\c3_'+LANG+'.mo');
+ {$ENDIF}
+
   colours[0]:=BLACK;
   colours[1]:=BROWN;
   colours[2]:=RED;
