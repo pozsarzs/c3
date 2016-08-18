@@ -2,8 +2,8 @@
 set -e
 # Automatically added by dh_installdocs
 if [ "$1" = "configure" ]; then
-  if [ -d /usr/doc -a ! -e /usr/doc/chc -a -d /usr/share/doc/chc ]; then
-    ln -sf /usr/share/doc/chc /usr/doc/chc
+  if [ -d /usr/doc -a ! -e /usr/doc/c3 -a -d /usr/share/doc/c3 ]; then
+    ln -sf /usr/share/doc/c3 /usr/doc/c3
   fi
 fi
 if [ -x update-menus ]; then
