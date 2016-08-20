@@ -53,8 +53,8 @@ require @xfree86.org/xlib 6.0
 installData share/c3
 outputStatus "$intl_INSTALLING_EXE"
 linkFile --silent $PREFIX/share/c3/c3 $PREFIX/bin/c3
-linkFile --silent $PREFIX/share/manual/c3_en.7 $PREFIX/share/man/man7/c3.7
-linkFile --silent $PREFIX/share/manual/c3_hu.7 $PREFIX/share/man/hu/man7/c3.7
+linkFile --silent $PREFIX/share/c3/manual/c3_en.7 $PREFIX/share/man/man7/c3.7
+linkFile --silent $PREFIX/share/c3/manual/c3_hu.7 $PREFIX/share/man/hu/man7/c3.7
 installDesktop "Application/Electronics" share/application/c3.desktop
 installIcon share/pixmaps/c3.xpm
 
