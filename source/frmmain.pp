@@ -830,16 +830,8 @@ var
   
 begin
   if Form1.PageControl1.ActivePageIndex<13
-  then
-    begin
-      Form1.Button1.Visible:=true;
-      Form1.PageControl1.Pages[10].Visible:=false;
-    end
-  else
-    begin
-      Form1.Button1.Visible:=false;
-      Form1.PageControl1.Pages[10].Visible:=true;
-    end;
+    then Form1.Button1.Visible:=true
+    else Form1.Button1.Visible:=false;
   case Form1.PageControl1.ActivePageIndex of
     0: resistors1;
     1: resistors2;

@@ -50,11 +50,12 @@
         <Filename Value="c3.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="c3"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="0"/>
         <WindowIndex Value="1"/>
         <TopLine Value="1"/>
         <CursorPos X="1" Y="7"/>
-        <UsageCount Value="90"/>
+        <UsageCount Value="91"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit0>
@@ -65,17 +66,16 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="frmmain"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <WindowIndex Value="1"/>
         <TopLine Value="1"/>
         <CursorPos X="1" Y="7"/>
-        <UsageCount Value="90"/>
+        <UsageCount Value="91"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
     </Units>
-    <JumpHistory Count="7" HistoryIndex="6">
+    <JumpHistory Count="16" HistoryIndex="15">
       <Position1>
         <Filename Value="frmmain.pp"/>
         <Caret Line="843" Column="13" TopLine="821"/>
@@ -104,6 +104,42 @@
         <Filename Value="frmmain.pp"/>
         <Caret Line="329" Column="11" TopLine="311"/>
       </Position7>
+      <Position8>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="7" Column="1" TopLine="1"/>
+      </Position8>
+      <Position9>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="269" Column="7" TopLine="260"/>
+      </Position9>
+      <Position10>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="270" Column="5" TopLine="270"/>
+      </Position10>
+      <Position11>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="14" Column="33" TopLine="1"/>
+      </Position11>
+      <Position12>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="236" Column="14" TopLine="216"/>
+      </Position12>
+      <Position13>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="1081" Column="12" TopLine="1073"/>
+      </Position13>
+      <Position14>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="236" Column="14" TopLine="224"/>
+      </Position14>
+      <Position15>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="1079" Column="49" TopLine="1076"/>
+      </Position15>
+      <Position16>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="848" Column="5" TopLine="1"/>
+      </Position16>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
